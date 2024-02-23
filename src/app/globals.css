@@ -2,11 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-html,body{margin:0;padding:0}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
   background: blue;
 }
 .ant-layout-sider-trigger {
-  background: green !important;
+  background: yellow !important;
 }
