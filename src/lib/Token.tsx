@@ -10,7 +10,7 @@ export const GenerateToken = async (user: any) => {
   return token;
 };
 
-export const VerifyToken = async (token: string, email: string) => {
+export const VerifyToken = async (token: string) => {
   const verified = await jwt.verify(token, AUTH);
   return verified;
 };
