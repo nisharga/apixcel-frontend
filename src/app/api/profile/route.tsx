@@ -18,6 +18,7 @@ export const GET = async (request: NextRequest) => {
       }
     );
   }
+  
   const { userId } = await VerifyToken(auth);
 
   if (!userId) {
