@@ -17,6 +17,7 @@
     "nodemailer": "^6.9.10",
     "react": "^18",
     "react-dom": "^18",
+    "react-hook-form": "^7.50.1",
     "stripe": "^14.18.0"
   },
   "devDependencies": {
