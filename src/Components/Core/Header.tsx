@@ -22,7 +22,7 @@ const Header = () => {
 }, [inputValue, 500]);
 
   return (
-    <div className="p-12 bg-[#1E1E1E]">
+    <div className="px-12 pt-8 bg-[#1E1E1E]">
        {/*  <div className="flex justify-between">
             <div className="text-3xl font-semibold text-white">Welcome to fauget music services</div> 
             <div className="flex gap-4">
