@@ -22,3 +22,33 @@ export const musicImage = [
     },
 ]
 
+export const TagsAll = [
+    {
+        id: 1,
+        tag: "For You"
+    },  
+    {
+        id: 2,
+        tag: "Popular"
+    }, 
+    {
+        id: 3,
+        tag: "Trend"
+    }, 
+    {
+        id: 4,
+        tag: "Pop"
+    }, 
+    {
+        id: 5,
+        tag: "Edm"
+    }, 
+    {
+        id: 6,
+        tag: "Rock"
+    }, 
+    {
+        id: 7,
+        tag: "More"
+    }, 
+]
