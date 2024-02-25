@@ -10,22 +10,22 @@ import {
   export const sidebarItems = ( ) => {
     const sidebarItems: MenuProps["items"] = [
       {
-        label: <Link href={`/`} > <span className="text-white text-xl	font-semibold">Home</span> </Link>,
-        icon: <HomeOutlined className="text-white text-xl	font-semibold"/>,
+        label: <Link href={`/`} > <span className="text-white text:base md:text-xl	font-semibold">Home</span> </Link>,
+        icon: <HomeOutlined className="text-white text:base md:text-xl	font-semibold"/>,
         key: `home`,
       },
       {
-        label: <Link href={`/podcast`} > <span className="text-white text-xl	font-semibold">Podcast</span> </Link>,
+        label: <Link href={`/podcast`} > <span className="text-white text:base md:text-xl	font-semibold">Podcast</span> </Link>,
         icon: <TikTokOutlined />,
         key: `podcast`,
       },
       {
-        label: <Link href={`/settings`} > <span className="text-white text-xl	font-semibold">Settings</span> </Link>,
+        label: <Link href={`/settings`} > <span className="text-white text:base md:text-xl	font-semibold">Settings</span> </Link>,
         icon: <SettingOutlined />,
         key: `settings`,
       },
       {
-        label: <Link href={`/logout`} > <span className="text-white text-xl	font-semibold">Logout</span> </Link>,
+        label: <Link href={`/logout`} > <span className="text-white text:base md:text-xl	font-semibold">Logout</span> </Link>,
         icon: <LogoutOutlined />,
         key: `logout`,
       },
