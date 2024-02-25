@@ -4,7 +4,7 @@ import { useState } from "react";
 import { sidebarItems } from "./sidebarItems";
 import Avater from "../Reusable/Avater";
 import { FormProvider } from "antd/es/form/context"; 
-import Music from "../Reusable/Music";
+import Music from "../Icons/Music";
 import PlayList from "../UI/PlayList";
 
  

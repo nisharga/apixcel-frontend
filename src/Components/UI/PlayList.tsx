@@ -1,5 +1,5 @@
-import React from 'react'
-import Music from '../Reusable/Music'
+import React from 'react' 
+import { Music } from '../Icons'
 
 const PlayList = () => {
   return (
