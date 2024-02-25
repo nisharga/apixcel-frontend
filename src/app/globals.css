@@ -9,8 +9,36 @@ body {
 }
 
 aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-has-trigger {
-  background: blue;
+  background: #3B3B3B;
 }
 .ant-layout-sider-trigger {
-  background: yellow !important;
+  background: #060606 !important;
 }
+li.ant-menu-item {
+  background: #3B3B3B;
+}
+ul.ant-menu.ant-menu-root.ant-menu-inline.ant-menu-dark.customSidebar.css-dev-only-do-not-override-1xg9z9n {
+  background: #3B3B3B;
+}
+
+aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed.ant-layout-sider-has-trigger .sidebar_header,
+aside.ant-layout-sider.ant-layout-sider-dark.ant-layout-sider-collapsed.ant-layout-sider-has-trigger .playlist {
+  display: none;
+}
+
+/* li.ant-menu-item { */
+  /* font-size: 22px; */
+  /* font-weight: 600; */
+  /* color: white; */
+/* } */
+/*  */
+li.ant-menu-item span svg {
+  color: #fff !important;
+  fill: #fff;
+  font-size: 22px;
+  margin-right: 8px;
+}
+/*  */
+/* li.ant-menu-item { */
+  /* padding: 25px 20px !important; */
+/* } */
