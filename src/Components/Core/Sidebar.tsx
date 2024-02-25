@@ -36,7 +36,7 @@ const Sidebar = () => {
 
    <div className="sidebar_header pb-4">
     <div className=" flex justify-between items-center px-6">
-      <h2 className="text-white text-xl	font-semibold">Menu</h2>
+      <h2 className="text-white text-lg md:text-xl	font-semibold">Menu</h2>
       <div className="h-[1px] bg-white w-16"></div>
     </div>
    </div>
