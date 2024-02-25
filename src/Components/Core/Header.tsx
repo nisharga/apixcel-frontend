@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import { Mic, Search } from "../Icons"
 import Avater from "../Reusable/Avater"
 import RoundedBtn from "../Reusable/RoundedBtn"  
+import ModalBox from "../ModalBox/ModalBox";
+import SignIn from "../UI/SignIn";
 
 const Header = () => {
   const [inputValue, setInputValue] = useState("");
@@ -23,13 +25,18 @@ const Header = () => {
 
   return (
     <div className="px-12 pt-8 bg-[#1E1E1E]">
-       {/*  <div className="flex justify-between">
+        <div className="flex justify-between">
             <div className="text-3xl font-semibold text-white">Welcome to fauget music services</div> 
             <div className="flex gap-4">
-              <RoundedBtn className="!bg-[#060606] !px-16">Sign In</RoundedBtn>
+              <ModalBox 
+                btnLabel={<RoundedBtn className="!bg-[#060606] !px-16">Sign In</RoundedBtn>}
+                modalWidth={660}
+              >
+                <SignIn />
+                </ModalBox> 
               <RoundedBtn className="!px-16">Sign Up</RoundedBtn>
             </div>     
-        </div>  */}
+        </div>   
 
 
         <div className="flex flex-col md:flex-row md:justify-between items-center">
