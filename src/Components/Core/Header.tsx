@@ -29,8 +29,9 @@ const Header = () => {
             <div className="text-3xl font-semibold text-white">Welcome to fauget music services</div> 
             <div className="flex gap-4">
               <ModalBox 
-                btnLabel={<RoundedBtn className="!bg-[#060606] !px-16">Sign In</RoundedBtn>}
+                btnLabel="Sign In"
                 modalWidth={660}
+                ModalBtnClass="!bg-[#060606] !px-16 py-2 px-10 bg-[#3B3B3B] text-base font-semibold rounded-full transition duration-300 hover:duration-500 hover:scale-105 text-[#fff]"
               >
                 <SignIn />
                 </ModalBox> 
