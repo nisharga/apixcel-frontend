@@ -1,37 +1,33 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## All Pages
 
-## Getting Started
+### Homepage
 
-First, run the development server:
+![App Screenshot](https://i.ibb.co/ZJM3hQb/Screenshot.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### SignIn
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![App Screenshot](https://i.ibb.co/PTYRwYJ/Screenshot-1.png)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### SignUp
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+![App Screenshot](https://i.ibb.co/tBWgFPx/Screenshot-2.png)
 
-## Learn More
+### Payment
 
-To learn more about Next.js, take a look at the following resources:
+![App Screenshot](https://i.ibb.co/t8WTSjH/Screenshot-8.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Setting Page
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+![App Screenshot](https://i.ibb.co/qBFPc2Y/Screenshot-4.png)
 
-## Deploy on Vercel
+### Homepage After Login
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![App Screenshot](https://i.ibb.co/p1P93N2/Screenshot-5.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# apixcel-frontend
+### Podcast Page
+
+![App Screenshot](https://i.ibb.co/vBN5GGY/Screenshot-6.png)
+
+### Single Podcast page
+
+![App Screenshot](https://i.ibb.co/y0CHdnQ/Screenshot-7.png)
