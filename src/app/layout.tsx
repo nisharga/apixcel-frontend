@@ -1,6 +1,9 @@
+"use client"
 import DashboardLayout from "@/Components/Core/DashboardLayout";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
+import store from "@/redux/store";
+import { Provider } from "react-redux";
 
 
 export default function RootLayout({
@@ -11,10 +14,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bodyClass">
-        <DashboardLayout>
-          {children}
-          <Toaster />
-        </DashboardLayout>
+          <DashboardLayout>
+            <Provider store={store}>
+              {children}
+            </Provider>
+            <Toaster />
+          </DashboardLayout>
         </body>
     </html>
   );
