@@ -17,12 +17,8 @@ const Header = () => {
               <SignInModal/>
               <SignUpModal /> 
             </div>     
-        </div>   
-
-
-            {/* <HeaderLoginUser/> */}
-
-
+        </div>    
+            {/* <HeaderLoginUser/> */} 
     </div>
   )
 }
