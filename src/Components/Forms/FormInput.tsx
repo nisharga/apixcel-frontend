@@ -16,6 +16,7 @@ interface IInput {
   validation?: object;
   label?: string;
   prefix?: ReactNode;
+  className?: string;
 }
 
 const FormInput = ({
@@ -28,7 +29,7 @@ const FormInput = ({
   validation,
   label,
   prefix,
-
+  className,
 }: IInput) => {
   const {
     control,
@@ -50,6 +51,7 @@ const FormInput = ({
               size={size}
               placeholder={placeholder}
               {...field}
+              className={className}
               value={value ? value : field.value}
             />
           ) : (
@@ -60,7 +62,7 @@ const FormInput = ({
               {...field}
               value={value ? value : field.value}
               prefix={prefix}
-              
+              className={className}
             />
           )
         }

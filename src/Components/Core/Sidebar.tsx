@@ -6,6 +6,7 @@ import Avater from "../Reusable/Avater";
 import { FormProvider } from "antd/es/form/context"; 
 import Music from "../Icons/Music";
 import PlayList from "../UI/PlayList";
+import Logo from "../Reusable/Logo";
 
  
 
@@ -28,11 +29,7 @@ const Sidebar = () => {
     }}
   >
 
-    <Avater
-      src="https://i.ibb.co/MGtJjCN/Group-16-1.png"
-      className="ml-4 sm:ml-0 sm:px-6 py-5"
-      imageClass="w-full"
-    />
+    <div className="ml-4 sm:ml-0 sm:px-6 py-5"><Logo/></div>
 
    <div className="sidebar_header pb-4">
     <div className=" flex justify-between items-center px-6">

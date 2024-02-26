@@ -5,6 +5,7 @@ interface Iprops{
     children: React.ReactNode | string | any;
     className?: string;
     onClick?: () => void;
+    type?: any;
 }
 const RoundedBtn:FC<Iprops> = ({children, className, onClick, ...rest}) => {
   return (
