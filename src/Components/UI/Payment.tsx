@@ -4,7 +4,8 @@ import { FormInput, Forms } from '../Forms';
 import { SubmitHandler  } from "react-hook-form";
 import RoundedBtn from '../Reusable/RoundedBtn';
 import Link from 'next/link';
-import toast from 'react-hot-toast'; 
+import toast from 'react-hot-toast';  
+import StripePay from '@/stripe/StripePay';
 
 
 interface IProps{
@@ -53,7 +54,7 @@ const Payment:FC<IProps> = ({ setOpen }) => {
                 <h2 className="text-2xl md:text-4xl text-white py-8">Subscription Plan</h2>
              </div>
             
-            
+            <StripePay />
 
             <div className="flex items-center justify-end">
               <RoundedBtn
