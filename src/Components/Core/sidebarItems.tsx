@@ -1,3 +1,4 @@
+"use client"
 import { 
   HomeOutlined,
   TikTokOutlined,
@@ -6,8 +7,14 @@ import {
   } from "@ant-design/icons";
   import type { MenuProps } from "antd";
   import Link from "next/link";
+import { useEffect, useState } from "react";
   
+
+
+
+
   export const sidebarItems = ( ) => {
+ 
     const sidebarItems: MenuProps["items"] = [
       {
         label: <Link href={`/`} > <span className="text-white text:base md:text-xl	font-semibold">Home</span> </Link>,
@@ -24,11 +31,9 @@ import {
         icon: <SettingOutlined />,
         key: `settings`,
       },
-      {
-        label: <Link href={`/logout`} > <span className="text-white text:base md:text-xl	font-semibold">Logout</span> </Link>,
-        icon: <LogoutOutlined />,
-        key: `logout`,
-      },
+       
     ];
     return sidebarItems;
   };
+
+  
