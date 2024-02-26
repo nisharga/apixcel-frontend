@@ -16,7 +16,7 @@ const SignUp:FC<IProps> = ({ setOpen }) => {
       if(data?.password !== data?.confirm_password){
         toast.error('Password not matched with confirm password');
       }
-      else if(data?.email === undefined ||  data?.password === undefined || data?.confirm_password){
+      else if(data?.email === undefined ||  data?.password === undefined || data?.confirm_password === undefined){
         toast.error('Please fill out all the fields');
       }
 
@@ -33,8 +33,10 @@ const SignUp:FC<IProps> = ({ setOpen }) => {
         })
         .then((response) => response.json())
         .then((data) => {
-            console.log("Success:", data);
             toast.success(data?.msg);
+            console.log("Success:", data);
+            setOpen(false); 
+            toast.success("Now Sign In Your Account");
         })
         
         .catch((error) => {
