@@ -1,5 +1,5 @@
  
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import ModalBox from "../ModalBox/ModalBox";
 import SignIn from "../UI/SignIn";
 import SignUp from "../UI/SignUp";
@@ -7,9 +7,8 @@ import SignInModal from "../ModalBox/SignInModal";
 import SignUpModal from "../ModalBox/SignUpModal";
 // import HeaderLoginUser from "../UI/HeaderLoginUser";
 
-const Header = () => {
- 
-
+const Header = () => { 
+   
   return (
     <div className="px-12 pt-8 bg-[#1E1E1E]">
         <div className="flex justify-between">
