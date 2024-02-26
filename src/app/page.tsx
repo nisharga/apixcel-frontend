@@ -1,7 +1,6 @@
  import BannarMusic from '@/Components/UI/BannarMusic'; 
 import MusicAll from '@/Components/UI/MusicAll'; 
-import Tags from '@/Components/UI/Tags';    
-import { useGetSingleTotoQuery } from '@/redux/api/driverApi';
+import Tags from '@/Components/UI/Tags';     
 
 export default function Home() { 
   return (
@@ -9,8 +8,8 @@ export default function Home() {
       <div className="grid grid-cols-12">
         <div className="col-span-12">
         <BannarMusic />
-      <Tags />
-      <MusicAll />
+        <Tags />
+        <MusicAll />
         </div>
       </div>
     </div>

@@ -27,12 +27,12 @@ const SignIn:FC<IProps> = ({ setOpen }) => {
         }),
         })
         .then((response) => response.json())
-        .then((data) => {
+        .then((data) => { 
             console.log("Success:", data);
             setOpen(false);
             toast.success(data?.msg);
-        })
-        
+            localStorage.setItem("token", data?.token);
+        }) 
         .catch((error) => {
             console.error("Error:", error);
         });
