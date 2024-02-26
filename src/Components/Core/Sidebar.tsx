@@ -1,18 +1,39 @@
 import { Menu } from "antd"
 import Sider from "antd/es/layout/Sider"
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { sidebarItems } from "./sidebarItems";
 import Avater from "../Reusable/Avater";
 import { FormProvider } from "antd/es/form/context"; 
 import Music from "../Icons/Music";
 import PlayList from "../UI/PlayList";
 import Logo from "../Reusable/Logo";
-
+import {  
+  LogoutOutlined 
+  } from "@ant-design/icons";
  
 
 const Sidebar = () => {
     const [collapsed, setCollapsed] = useState(false);
     const [currentRole, setCurrentRole] = useState('');
+
+    const [token, setToken] = useState<string | null>(null);
+    useEffect(() => {
+      // Retrieve token from localStorage
+      const storedToken = localStorage.getItem('token');
+      setToken(storedToken);
+  }, []);
+  const handleLogout = () => {
+    // Remove token from localStorage
+    localStorage.removeItem('token');
+    // Reset token state
+    setToken(null);
+
+    setTimeout(() => {
+      window.location.reload();
+    }, 2000);
+
+  };
+
   return (
     <Sider
     collapsible
@@ -47,8 +68,10 @@ const Sidebar = () => {
       items={sidebarItems()}
     />
 
-    
+{token && <button onClick={handleLogout} className="text-white text:base md:text-xl	font-semibold ml-7"><span className="mr-5"><LogoutOutlined /></span>Logout</button>}
       <div> 
+    
+
      <div className="playlist">
        <PlayList></PlayList>
      </div>

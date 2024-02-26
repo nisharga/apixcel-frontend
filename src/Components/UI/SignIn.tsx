@@ -32,6 +32,11 @@ const SignIn:FC<IProps> = ({ setOpen }) => {
             setOpen(false);
             toast.success(data?.msg);
             localStorage.setItem("token", data?.token);
+
+            setTimeout(() => {
+              window.location.reload();
+            }, 3000);
+            
         }) 
         .catch((error) => {
             console.error("Error:", error);

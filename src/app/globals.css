@@ -69,6 +69,29 @@ li.ant-menu-item span svg {
   opacity: 0.2;
 }
 
+.podcast_bannar_bg {
+  margin: 50px 0;
+  background-image: url('https://i.ibb.co/ngYqs55/Group-28-1.png');
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+.podcast_bannar_bg:after {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  background: linear-gradient(90deg, rgba(8,8,8,1) 43%, rgba(3,238,210,1) 80%);
+  z-index: -1;
+  opacity: 0.2;
+}
+
 .premium_bannar_bg{
   background: linear-gradient(90deg, rgba(0,113,130,1) 80%, rgba(3,238,210,1) 80%);
   width: 100%;
@@ -79,3 +102,5 @@ li.ant-menu-item span svg {
   background: #3B3B3B !important;
   border-radius: 50px;  
 }
+
+ 
