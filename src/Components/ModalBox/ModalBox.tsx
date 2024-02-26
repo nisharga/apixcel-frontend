@@ -7,11 +7,13 @@ interface IProps {
   ModalBtnClass?: string; 
   children?: React.ReactNode;
   title?: React.ReactNode;
-  modalWidth?: number;
+  modalWidth?: number; 
+  setOpen?: any;
+  open?: any;
 }
 
-const ModalBox: React.FC<IProps> = ({ btnLabel, children, title, modalWidth, ModalBtnClass }) => {
-  const [open, setOpen] = useState(false);
+const ModalBox: React.FC<IProps> = ({ btnLabel, children, title, modalWidth, ModalBtnClass, setOpen, open }) => {
+  
   return (
     <>
       <button
@@ -26,7 +28,8 @@ const ModalBox: React.FC<IProps> = ({ btnLabel, children, title, modalWidth, Mod
         onCancel={() => setOpen(false)}
         title={title || ""}
         width={modalWidth || 400}
-        footer={null} 
+        footer={null}   
+        closable={false}
       >
         {children}
       </Modal>

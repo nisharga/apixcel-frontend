@@ -1,5 +1,6 @@
 import DashboardLayout from "@/Components/Core/DashboardLayout";
 import "./globals.css";
+import { Toaster } from "react-hot-toast";
 
 
 export default function RootLayout({
@@ -12,6 +13,7 @@ export default function RootLayout({
       <body className="bodyClass">
         <DashboardLayout>
           {children}
+          <Toaster />
         </DashboardLayout>
         </body>
     </html>
