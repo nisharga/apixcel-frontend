@@ -36,7 +36,7 @@ export const POST = async (request: Request) => {
   const token = await GenerateToken(existUser);
 
   const reponse = NextResponse.json(
-    { error: null, msg: "User Login Successfully" },
+    { error: null, msg: "User Login Successfully", token },
     {
       status: 200,
     }
