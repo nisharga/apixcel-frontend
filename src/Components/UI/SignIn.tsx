@@ -28,11 +28,11 @@ const SignIn:FC<IProps> = ({ setOpen }) => {
         })
         .then((response) => response.json())
         .then((data) => {
+            alert("HI")
             console.log("Success:", data);
             setOpen(false);
             toast.success(data?.msg);
-        })
-        
+        }) 
         .catch((error) => {
             console.error("Error:", error);
         });
